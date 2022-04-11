@@ -1,0 +1,9 @@
+{{ template "header" "Index" }}
+{{ if . }}
+<p><a href="/logout">Logout</a></p>
+<p><a href="/foo">Foo</a></p>
+{{ else }}
+<p><a href="/login">Login</a></p>
+<p><a href="/signup">Signup</a></p>
+{{ end }}
+{{ template "footer" }}

@@ -1,0 +1,13 @@
+{{ template "header" "Login" }}
+<p><a href="/">Index</a></p>
+{{ if . }}
+<p>{{ . }}</p>
+{{ end }}
+<form action="/login" method="POST">
+    <input type="email" name="email" id="email" placeholder="Enter Email ID">
+    <br><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+{{ template "footer" }}
